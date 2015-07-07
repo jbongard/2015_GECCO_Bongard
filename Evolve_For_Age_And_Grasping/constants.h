@@ -5,8 +5,8 @@
 
 int			POP_SIZE			= 100;
 
-int			NUM_GENERATIONS			= 1000000;
-// int			NUM_GENERATIONS			= 1000;
+// int			NUM_GENERATIONS			= 1000000;
+int			NUM_GENERATIONS			= 2000;
 
 double			MUTATION_PROBABILITY		= 0.05;
 

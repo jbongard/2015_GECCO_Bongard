@@ -76,9 +76,9 @@ void AFPO::Evolve(int randomSeed, int selectForAttractors, int useEvolvedBodies)
 
 		Sort();
 
-		// if ( (currGeneration%1000)==0 ) {
+		if ( (currGeneration%1000)==0 ) {
 
-		if ( currGeneration==(NUM_GENERATIONS-1) ) {
+		// if ( currGeneration==(NUM_GENERATIONS-1) ) {
 
 			Print();
 			genomes[0]->Evaluate(randomSeed,objects,true,robot,selectForAttractors,useEvolvedBodies);
@@ -169,7 +169,7 @@ void AFPO::Inject_Newcomer(void) {
 
 void AFPO::Print(void) {
 
-	printf("[g: %d] \t",currGeneration);
+	printf("[progress: %f %%] \t",100.0*(float(currGeneration)/float(NUM_GENERATIONS)));
 
 	printf("[p: %d] \t",POP_SIZE);
 

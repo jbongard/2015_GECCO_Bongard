@@ -27,8 +27,6 @@ int main(int argc, char* argv[])
         char fileName[100];
         sprintf(fileName,"Data/results_%d.txt",randomSeed);
         ifstream ifile(fileName);
-        if ( ifile )
-                exit(0);
 
 	srand(randomSeed);
 
