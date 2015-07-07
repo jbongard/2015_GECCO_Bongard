@@ -107,3 +107,50 @@ Step 4: Replicate Table 1.
   './Modularity 0 1 0', ... './Modularity 99 1 0', 
   './Modularity 100 1 1', ..., './Modularity 199 1 1'.
 
+Step 4: Replicate Figure 4a.
+
+- Open file Evolve_For_Age_And_Grasping/Data/results_0.txt. This file reports the results from
+  the first run of experiment set 2. The last line of this file reports information about the
+  best robot in the population when this run terminated.
+
+- The entry 'aa: x' reports the number of 'a'ttractors 'a'ttained by this robot. In other words,
+  it reports how many of the 60 environments this robot can succeed in.
+
+- Write a python script that collects these number from each of the 100 files results_0.txt,
+  ..., results_99.txt.
+
+- Compute the mean, and standard error of the mean, of these 100 numbers.
+
+- Do the same thing for the 100 numbers stored in results_100.txt, ... results_199.txt. This 
+  gives you the mean, and standard errror of the mean, for the performance of the 100 best
+  robots produced when their morphologies were evolved as well (experiment set 3).
+
+- Plot these two means and SEMs. This will give you Figure 4a.
+
+Step 5. Replicate Figure 4b.
+
+- Do the same as in step 4, but in this case extract the numbers associated with 'm: x',
+  which are the neural modularities of these robots. Plot the resulting means and SEMs.
+
+Step 6. Replicate Figure 4c.
+
+- Do the same as in step 4, but in this case extract the numbers associated with 'as: x',
+  which are the behavioral conservatisms of these robots. Plot the resulting means and SEMs.
+
+Step 7. Replicate Figure 4d.
+
+- Do the same as in step 4, but in this case extract the numbers associated with 'nd: x',
+  which are the pose differences of these robots. Plot the resulting means and SEMs.
+
+Step 8. Replicate Figure 5.
+
+- Repeat steps 4 through 7, but using the Evolve_For_Age_Grasping_Modularity/ directory.
+
+Step 9. Replicate Figure 6.
+
+- Repeat steps 4 through 7, but using the Evolve_For_Age_Grasping_Conservatism/ directory.
+
+Step 10. Replicate Figure 7.
+
+- Replot the data from Figs 4a, 5a, and 6a.
+
