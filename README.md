@@ -88,4 +88,22 @@ Step 4: Replicate Table 1.
 - Continue until 100 runs have been performed, which should generate 100 results files in the
   Data/ directory: results_0.txt, results_1.txt, ... results_99.txt
 
+- To perform 100 runs of experiment 2, enter the Evolve_For_Age_And_Grasping directory.
+
+- './Modularity 0 1 0' will perform the first run. The zero supplied for the third argument keeps
+   the morphology fixed.
+
+- Perform 99 more runs: './Modularity 1 1 0', ... './Modularity 99 1 0'.
+
+- To perform the 100 runs of experiment 3, run './Modularity 100 1 1', ... '199 1 1'. Using
+  random seeds 100 through 199 makes sure that the results files do not overwrite those generated
+  from the previous step.
+
+- To perform experiment sets 4 and 5, enter Evolve_For_Age_Grasping_Modularity and perform
+  './Modularity 0 1 0', ... './Modularity 99 1 0',
+  './Modularity 100 1 1', ..., './Modularity 199 1 1'.
+
+- To perform experiment sets 6 and 7, enter Evolve_For_Age_Grasping_Conservatism and perform
+  './Modularity 0 1 0', ... './Modularity 99 1 0', 
+  './Modularity 100 1 1', ..., './Modularity 199 1 1'.
 
