@@ -1,0 +1,8 @@
+g++ -c Modularity.cpp -o Modularity.o
+g++ -c object.cpp -o object.o
+g++ -c genome.cpp -o genome.o
+g++ -c afpo.cpp -o afpo.o
+g++ -c robot.cpp -o robot.o
+g++ -c matrix.cpp -o matrix.o
+g++ -c rbn.cpp -o rbn.o
+g++ -g -o Modularity Modularity.o object.o genome.o afpo.o robot.o matrix.o rbn.o
