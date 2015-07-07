@@ -57,3 +57,19 @@ Step 2: Replicate Figure 2.
 - Your visualization may not contain all four panels. This indicates that, by the end of your run,
   no robot had succeeded in all four environments. If this is the case, go back to constants.h
   and extend the length of the run by increasing MAX_GENERATIONS, re-compiling, and re-running. 
+
+Step 3: Replicate Figure 3.
+
+This figure shows an evolved robot from experiment set 7 in Table 1. This robot was produced by allowing both the neural network and morphology of the robot to evolve. A tri-objective fitness function is used that selects for age, grasping ability, and behavioral conservatism.
+
+- Enter the Evolve_For_Age_Grasping_Conservatism directory.
+
+- Compile the C++ code by running ./makeModularity
+
+- Run this code at the command line: ./Modularity 0 1 1
+
+- When the run finishes, visualize the behavior of the best robot by copying the Robot_Matrix
+  files in the Data/ directory into the Visualization/ directory and typing 'python Robot_Draw.py'
+  there.
+
+
