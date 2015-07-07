@@ -7,7 +7,7 @@ NUM_OBJECTS = 4
 
 def Get_Matrix(objectIndex):
 
-    fileName = 'Robot_Matrix_100_'+str(objectIndex)+'.txt';
+    fileName = 'Robot_Matrix_0_'+str(objectIndex)+'.txt';
 
     f = open(fileName,'r');
     numSegments = 0;
@@ -90,20 +90,28 @@ def Draw_Robot(M):
 	elif ( i==6 ):
 		c = [0,1,0]
         plot([x1,x2],[y1,y2],'k-',linewidth=2,color=c);
-    
+   
+def Robot_Succeeded_In_Environment(o):
+
+	fileName = 'Robot_Matrix_0_' + str(o) + '.txt'
+
+	return ( isfile(fileName) )
+ 
 # Main function ---------------------------------------
 
 figure(1)
 
 for o in range(0,NUM_OBJECTS):
 
-	subplot(sqrt(NUM_OBJECTS),sqrt(NUM_OBJECTS),o+1)
+	if ( Robot_Succeeded_In_Environment(o) ):
 
-	M = Get_Matrix(o)
-	Draw_Ground()
-	Draw_Circle(o)
-	Draw_Robot(M)
-	ylim([-5,5])
-	xlim([-5,5])
+		subplot(sqrt(NUM_OBJECTS),sqrt(NUM_OBJECTS),o+1)
+
+		M = Get_Matrix(o)
+		Draw_Ground()
+		Draw_Circle(o)
+		Draw_Robot(M)
+		ylim([-5,5])
+		xlim([-5,5])
 
 show();

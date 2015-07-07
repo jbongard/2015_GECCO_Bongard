@@ -42,4 +42,18 @@ Step 2: Replicate Figure 2.
 
 - When the code finishes, results are stored in the Data/ directory.
 
+- Open Data/results_0.txt to see the results. Each row reports the modularity (m) and grasping
+  ability (g) of the best robot in the population up to that point. Disregard the other data
+  for now.
 
+- Now let's visualize the behavior of the best robot found by the end of your run. To do so,
+  copy the Robot_Matrix files found in Data/ into the Visualization/ directory.
+
+- We will use Python, NumPy, SciPy and MatplotLib to do the visualization. If you are missing any
+  of these, install them now.
+
+- In Visualization/ type 'python Robot_Draw.py'. This will re-create something similar to Figure 2.
+
+- Your visualization may not contain all four panels. This indicates that, by the end of your run,
+  no robot had succeeded in all four environments. If this is the case, go back to constants.h
+  and extend the length of the run by increasing MAX_GENERATIONS, re-compiling, and re-running. 
