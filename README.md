@@ -154,3 +154,5 @@ Step 10. Replicate Figure 7.
 
 - Replot the data from Figs 4a, 5a, and 6a.
 
+Any questions should be directed to jbongard@uvm.edu.
+
