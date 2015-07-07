@@ -79,13 +79,13 @@ Step 4: Replicate Table 1.
 
 - To perform 100 runs of experiment 1, enter the Evolve_Simple_Controllers/ directory.
 
--- Compile the code by running ./makeModularity.
+- Compile the code by running ./makeModularity.
 
--- Perform the first run using random seed 0: ./Modularity 0.
+- Perform the first run using random seed 0: ./Modularity 0.
 
--- Perform the second run using random seed 1: ./Modularity 1.
+- Perform the second run using random seed 1: ./Modularity 1.
 
--- Continue until 100 runs have been performed, which should generate 100 results files in the
+- Continue until 100 runs have been performed, which should generate 100 results files in the
   Data/ directory: results_0.txt, results_1.txt, ... results_99.txt
 
 
