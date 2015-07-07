@@ -72,4 +72,20 @@ This figure shows an evolved robot from experiment set 7 in Table 1. This robot 
   files in the Data/ directory into the Visualization/ directory and typing 'python Robot_Draw.py'
   there.
 
+Step 4: Replicate Table 1.
+
+- Table 1 outlines the remaining runs that need to be performed to generate the remaining
+  figures in the paper.
+
+- To perform 100 runs of experiment 1, enter the Evolve_Simple_Controllers/ directory.
+
+-- Compile the code by running ./makeModularity.
+
+-- Perform the first run using random seed 0: ./Modularity 0.
+
+-- Perform the second run using random seed 1: ./Modularity 1.
+
+-- Continue until 100 runs have been performed, which should generate 100 results files in the
+  Data/ directory: results_0.txt, results_1.txt, ... results_99.txt
+
 
