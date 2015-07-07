@@ -9,3 +9,12 @@ one of the figures or tables in the paper.
 Step 1: Replicate Figure 1.
 
 - Click on Fig1.pdf in this directory.
+
+Step 2: Replicate Figure 2.
+
+- This figure shows an evolved robot from experiment set 3 in Table 1. This robot was produced by allowing both the neural network and
+  morphology of the robot to evolve. A bi-objective fitness function is used that only selects for age and grasping (the AFPO optimization
+  method was used here).
+
+
+
